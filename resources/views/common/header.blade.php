@@ -9,18 +9,15 @@
             </div>
             <div class="col-10 header-right text-right">
                 <ul class="decor-none d-block">
-                    <li>
-                        <a href="/">Home</a>
-                    </li>
-                    <li>
-                        <a href="/corso">Corso</a>
-                    </li>
-                    <li>
-                        <a href="/carriere">Dopo il corso</a>
-                    </li>
-                    <li>
-                        <a href="/lezione">Camp gratuito</a>
-                    </li>
+
+                    @foreach (config('menu.routes') as $route)
+
+                        <li class={{ Route::currentRouteName() == $route['id'] ? 'active' : '' }}>
+                            <a href="/{{ $route['id'] }}">{{ $route['text'] }}</a>
+                        </li>
+
+                    @endforeach
+
                     <li>
                         <a href="#" class="boolean-btn">Candidati ora</a>
                     </li>

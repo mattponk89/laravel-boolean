@@ -12,3 +12,7 @@
     </div>
 </main>
 @endsection
+
+@section('title-page')
+    CARRIERE
+@endsection
