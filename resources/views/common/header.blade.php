@@ -13,7 +13,7 @@
                     @foreach (config('menu.routes') as $route)
 
                         <li class={{ Route::currentRouteName() == $route['id'] ? 'active' : '' }}>
-                            <a href="/{{ $route['id'] }}">{{ $route['text'] }}</a>
+                            <a href="{{ route($route['id']) }}">{{ $route['text'] }}</a>
                         </li>
 
                     @endforeach
