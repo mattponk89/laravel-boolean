@@ -20,3 +20,6 @@ Route::get('/corso', 'CorsoController@index')->name('corso');
 Route::get('/carriere', 'CarriereController@index')->name('carriere');
 
 Route::get('/lezione', 'LezioneController@index')->name('lezione');
+
+Route::get('/utenti', 'UtentiController@index')->name('utenti');
+

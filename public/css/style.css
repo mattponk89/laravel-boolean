@@ -65,3 +65,45 @@ main{
     color: #0CD977;
     border-bottom: 2px solid #0CD977;
 }
+.users-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+
+.user {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+    padding: 10px;
+    margin: 10px 5px;
+    height: 250px;
+    background: rgb(46, 58, 70);
+    text-align: center;
+}
+
+.user img {
+    max-width: 100%;
+    width: 100px;
+    height: 100px;
+}
+
+.user h3 {
+    margin: 20px 0;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.user span.email {
+    color: grey;
+    font-size: 15px;
+}
+
+.user span.gender {
+    color: grey;
+}
