@@ -90,6 +90,8 @@ main{
     max-width: 100%;
     width: 100px;
     height: 100px;
+    object-fit: cover;
+    object-position: 50% 50%;   
 }
 
 .user h3 {
@@ -105,5 +107,5 @@ main{
 }
 
 .user span.gender {
-    color: grey;
+    color: red;
 }

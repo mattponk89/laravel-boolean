@@ -23,3 +23,5 @@ Route::get('/lezione', 'LezioneController@index')->name('lezione');
 
 Route::get('/utenti', 'UtentiController@index')->name('utenti');
 
+Route::get('/utenti/{id}', 'UtentiController@show')->name('utente');
+

@@ -5,7 +5,7 @@
     <div class="container">
         <div class="row">
             <div class="col-2 header-left">
-                <a href="/"><img src="images/logo.png" alt="logo"></a>
+                <a href="/"><img src="{{ URL::asset('images/logo.png') }}" alt="logo"></a>
             </div>
             <div class="col-10 header-right text-right">
                 <ul class="decor-none d-block">
